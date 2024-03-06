@@ -12,6 +12,12 @@
 
 <div class="container">
     <button type="button" class="btn-inicio">Iniciar</button>
+    <script>
+    $(document).on('click', '.btn-inicio', function() {
+        // Llamar a la función loadPartialView() para cambiar la vista
+        loadPartialView('mapa', '.app');
+    });
+    </script>
     <button type="button" class="btn-score">Score</button>
     <script> 
         $(document).on('click', '.btn-score', function() {
